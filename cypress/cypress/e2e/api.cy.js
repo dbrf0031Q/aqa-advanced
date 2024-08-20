@@ -32,7 +32,6 @@ describe("API Tests", () => {
       });
     });
   
-    // GET Expenses
     it("should get all expenses", () => {
       cy.getCookie("sid").then((cookie) => {
         if (cookie) {
@@ -54,7 +53,6 @@ describe("API Tests", () => {
       });
     });
   
-    // POST Cars
     it("should create a new car", () => {
       cy.getCookie("sid").then((cookie) => {
         if (cookie) {
@@ -80,8 +78,7 @@ describe("API Tests", () => {
         }
       });
     });
-  
-    // GET Cars
+
     it("should get all cars for the current user", () => {
       cy.getCookie("sid").then((cookie) => {
         if (cookie) {
@@ -103,8 +100,6 @@ describe("API Tests", () => {
         }
       });
     });
-  
-    // POST Expense
     it("should create a new expense", () => {
       cy.getCookie("sid").then((cookie) => {
         if (cookie) {
